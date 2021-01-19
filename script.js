@@ -29,15 +29,6 @@ if(accessToken == null || accessToken == "" || accessToken == undefined){
  }
 
 
-fetch("https://accounts.spotify.com/authorize" ,{
-   method: 'GET',
-   headers: {
-      'Authorization' : 'Bearer ' + accessToken
-  }
 
-})
-.then(res=>{
-   res.json()
-})
 
 
